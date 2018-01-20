@@ -2,7 +2,7 @@
 div{
     text-align: center;
 }
-body{
+html{
     background: url(subhash.jpeg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -10,3 +10,10 @@ body{
 footer{
     text-align: left;
     }
+.parallax{
+    background-image: url(79_1639.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
