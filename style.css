@@ -1,19 +1,98 @@
 
-div{
-    text-align: center;
+
+body, html{
+    position: relative;
+    max-width: 1500px;
+  height:100%;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
 }
-html{
-    background: url(subhash.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+
+.ptext{
+    font-family: "Montserrat";
+  position:relative;
+  top: -80%;
+  width:90%;
+  text-align:center;
+  color:black;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
 }
-footer{
-    text-align: left;
-    }
 .parallax{
     background-image: url(ece.jpg);
-    min-height: 500px;
+    min-height: 800px;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
+.wrap {
+  position: absolute;
+  top: -60%;
+  left: -10%;
+  height: 300%;
+  width: 200%;
+  transform: rotateX(20deg) rotateY(40deg) rotateZ(-20deg);
+  z-index: 5;
+}
+.pattern {
+  background-size: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 400%;
+  animation: scroll linear 20s infinite;
+}
+
+.pattern {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/27530/r7Z09Ht.png");
+}
+@keyframes scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-4000px, 0, 0);
+  }
+}
+.container {
+  background: #222;
+  height: 100%;
+  /* max-width: 800px;*/
+  margin: 0 auto;
+  overflow: hidden;
+  perspective: 1200px;
+}
+
+.container:after {
+  box-shadow: inset 5px 5px 80px rgba(0, 0, 0, 0.8);
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+#menu-nav {
+   background-image:url("francisc.jpg") ;
+    animation: scroll linear 2s ;
+    position: fixed;
+    height: 9%;
+    left: 0;
+    top: 0;
+    width: 99%;
+    max-width: 1480px;
+    margin: 10px 5px 5px 5px;
+    border-radius: 50px;
+    line-height: 20px;
+ 
+  
+    
+}
+footer{
+    text-align: right;
+    }
