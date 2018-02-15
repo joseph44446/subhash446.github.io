@@ -30,11 +30,14 @@ body, html{
     background-size: cover;
 }
 @media screen and (max-width:767px){
- background-image: url(ece.jpg) center;
+    .parallax{
+ background-image: url(ece.jpg);
    max-height:100px;
+        width:100%;
     background-attachment: fixed;
     background-position: center;
-    
+    background-size: fixed;
+}
 }
 
 .wrap {
@@ -56,12 +59,14 @@ body, html{
   animation: scroll linear 20s infinite;
 }
 @media screen and (max-width:767px){
+    .pattern {
   position: absolute;
   top: 0;
   left: 0;
   height: 70%;
   width: 100%;
   animation: scroll linear 20s infinite;
+}
 }
 .pattern {
   background-image: url(77_1614.jpg);
@@ -123,4 +128,153 @@ body, html{
 }
 footer{
     text-align: right;
+    }
+.footer #fbutton{
+	width:35px;
+	height:35px;
+	border: #fff 12px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #fbutton:hover{
+	width:35px;
+	height:35px;
+	border: #3A3A3A 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+@media screen and (max-width:767px){
+    .footer #fbutton{
+	width:15px;
+	height:15px;
+	border: #727172 5px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+    }
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+    
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 15em;
+}
+.footer #fcontainer{
+	margin-top:5px;
+	width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background: #fff;
+}
+.copyright {
+    border-top: solid 1px #ccc;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(204, 204, 204);
+    padding: 0px 0;
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin: 5px 10px 0;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif !important;
+    line-height: 1.5em;
+}
+    
+@media screen and (max-width:767px){
+     .copyright {
+     border-top: solid 0.5px #ccc;
+    border-top-width: 0.5px;
+    border-top-style: solid;
+    border-top-color: rgb(204, 204, 204);
+    padding: 0px 0;
+    padding-top: 2px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin: 2px 5px 0;
+    margin-top: 2px;
+    margin-right: 4px;
+    margin-bottom: 0px;
+    margin-left: 4px;
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif !important;
+    line-height: 1.0em;
+            }
+        }
+    
+h1{
+    font-family: cursive;
+    font-size: 0.7em;
+}
+
+.copyright .first {
+    float: left;
+    font-family: cursive;
+    color: #000;
+}
+.copyright .second {
+    font-family: sans-serif;
+    float: left;
+    text-align: right;
+    color: #000;
+    
+
+}
+a {
+    color: #000;
+}
+    .admin{
+        font-family: fantasy;
+        color:#000;
+        text-align: center;
+    }
+    .admin:hover{
+        color: #fff;
+        cursor: not-allowed;
+    }
+    
+    
+    #fbutton a:hover{
+        cursor: not-allowed;
     }
