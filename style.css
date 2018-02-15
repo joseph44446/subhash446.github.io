@@ -25,16 +25,16 @@ body, html{
 .parallax{
     background-image: url(ece.jpg);
     min-height: 800px;
-    background-attachment: relative;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
 @media screen and (max-width:767px){
  background-image: url(ece.jpg) center;
    max-height:100px;
-    background-attachment: relative;
+    background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    
 }
 
 .wrap {
